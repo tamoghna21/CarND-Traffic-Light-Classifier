@@ -21,12 +21,6 @@ The Base Models used here are taken from [Tensorflow detection model zoo](https:
 
     sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
 
-    sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
-
-    pip install tensorflow-gpu==1.4
-
-    pip install matplotlib
-
 
 3.  Create a new directory somewhere and name it tensorflow. Clone the Tensorflow's models repo by executing
 
@@ -134,7 +128,8 @@ For SSD Inception V2 model:
 
      wget http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz 
 
-     tar -xvzf ssd_inception_v2_coco_2018_01_28.tar.gz.
+     tar -xvzf ssd_inception_v2_coco_2018_01_28.tar.gz
+     
 
     
 ## Train the model
@@ -186,6 +181,8 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 
 ## Reference
+
 SSD Inception [SSD Inception V2 model](https://arxiv.org/pdf/1512.00567v3.pdf).
+
 Traffic Light Classification notebook [Traffic Light Classification notebook by alex-lechner](https://github.com/alex-lechner/Traffic-Light-Classification).
 
